@@ -1,0 +1,754 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family= Lora | Open + Sans '); 
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 14px;
+    font-size: 100%;
+    overflow:hidden;
+}
+
+body {
+    font-family: 'Lora', 'times new roman', serif;
+    overflow-y:scroll;
+}
+
+.conteudo, .chamada, .curiosidades, .personagens {
+    margin: 0 2.5%;
+}
+
+.curiosidade {
+    background-color: hsla(202, 100%, 40%, 0.1);
+    padding: 30px;
+}
+.curiosidade:nth-of-type(2n) {
+    margin-top: 20px;
+}
+
+body > section {
+    clear: both;
+    background-color: #FFF;
+}
+
+body.home > section:nth-child(2n) {
+    background-color: hsla(202, 100%, 40%, 0.1);
+}
+
+.divisao {
+    border: 0.5px solid hsl(202, 100%, 24%);
+    clear: both;
+}
+
+.topo {
+    height: 181px;
+    background: url(../imagens/topo.jpg) no-repeat center;
+}
+
+.topo .menu {
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    background-image: linear-gradient(hsl(202, 100%, 40%),hsl(202, 100%, 24%));
+    z-index: 99;
+    float: left;
+    width: 100%;
+}
+.topo .menu {
+    border: 1px solid hsl(0, 0%, 0%);
+    border-width: 1px 0;
+    padding: 0;
+    position: relative;
+    /*top: 81px;*/
+    float: left;
+    width: 100%;
+}
+
+.topo > .menu > ul {
+    width: calc(750px + 4px);
+    margin: 0 auto;
+    /* height: 32px; */
+}
+
+.topo .menu a {
+    text-decoration: none;
+    color: hsl(0, 8%, 89%);
+    font-weight: 500;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 0px hsl(0, 0%, 0%);
+}
+
+.topo > .menu > ul > li > a {
+    display: block;
+    border-left: solid 1px hsl(0, 0%, 100%);
+}
+
+.topo > .menu > ul > li:first-child > a {
+    border-left: none;
+}
+
+.menu > ul > li {
+    padding: 5px 0;
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+.topo .menu a:hover {
+    color: hsl(100, 100%, 100%);
+    text-shadow: none;
+}
+
+.topo > .menu > ul > li:hover {
+    background-color: hsl(202, 100%, 24%);
+    border-left:  solid 1px hsl(0, 0%, 0%);
+    border-right:  solid 1px hsl(0, 0%, 0%);
+    width: calc(150px - 1px);
+}
+
+.topo > .menu li:hover > a, .topo > .menu li:hover + li > a  {
+    border-left: none;
+}
+
+.menu .drop > .menuDrop {
+    display: none;
+    float: left;
+    z-index: 99;
+    width: auto;
+}
+
+.drop .menuDrop li {
+    display: block;
+    clear: left;
+    float: left;
+}
+
+.drop:hover > .menuDrop {
+    display: block;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(202, 100%, 24%);
+    position: absolute;
+    top: 30px;
+    border-width: 0 1px 1px 1px;
+    width: 150px;
+    box-shadow: 1px 1px 0px hsl(0, 0%, 0%);
+}
+
+.drop:hover > .menuDrop > li {
+    text-align: center;
+    width: 100%;
+    padding: 2.5px 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.titulo, .subtitulo {
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.titulo {
+    color: #B5001D;
+    text-shadow: 0.5px 0.5px 0 hsl(0, 0%, 0%);
+    font-size: 1.5em;
+}
+.subtitulo {
+    color: hsl(0, 0%, 0%);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(347, 100%, 45%);
+}
+
+a:hover {
+    color: hsl(0, 0%, 31%);
+}
+
+.mascara {
+    background-color: hsl(202, 100%, 40%);
+}
+
+.topo, .rodape {
+    text-align: center;
+}
+
+.topo .logo {
+    text-align: center;
+    float: left;
+    position: relative;
+    top: -7px;
+    left: calc((100% - 1366px) / 2 + 17px);
+}
+
+.objetivosPag {
+    display: flex;
+    align-items: center;
+}
+
+.objetivosPag .texto-pag {
+    float: right;    
+    max-width: 33%;
+    text-align: justify;
+    padding: 0 2%;
+}
+
+.objetivosPag .img-pag {
+    max-height: 293px;
+    width: 63%;
+    opacity: 0.75;
+    clear: both;
+}
+
+.meio {
+    position: relative;
+    top: -50%;
+    transform: translateY(50%); 
+}
+
+.chamada .texto-chamada, .chamada .img-lateral {
+    float: left;
+}
+.chamada .texto-chamada {
+    max-width: calc(100% - 300px);
+    padding-top: 20px;
+    text-align: justify;
+}
+.chamada {
+    min-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.chamada img {
+    max-width: 150px;
+}
+.chamada img:nth-of-type(2) {
+    margin-top: 66px;
+}
+
+.home .novidadesRecentes {
+    padding: 20px 10%;
+    float: left;
+}
+.novidadeRecent {
+    min-height: 199px;
+    float: left;
+    width: 48%;
+    background-color: hsl(100, 100%, 100%);
+    margin: 0 10px 10px 0;
+    box-shadow: 0.5px 0.5px 3px hsla(0, 0%, 0%, 0.25);
+}
+.novidadesRecentes figure.novidadeRecent:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.novidades {
+    width: calc(100% - 19.5%);
+    float: left;
+    margin-left: 2.5%;
+}
+
+.novidadeRecent img {
+    max-width: 199px;
+    min-width: 150px;
+    height: auto;
+    float: left;
+}
+.novidadeRecent .descricaoNovidade {
+    float: left;
+    width: calc(100% - 199px - 20px);
+    padding: 10px;
+}
+.novidadeRecent .descricaoNovidade .descricao {
+    text-overflow: ellipsis; 
+    height: calc(199px - 1em - 1.2em - 40px - 4px);
+    overflow: hidden;
+} 
+
+.btnLeia {
+    color: #004d7a;
+    transition: color 0.6s, background-color 0.6s;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2px 15px;
+    border-radius: 2px;
+    border: 2px outset hsl(202, 100%, 40%);
+}
+.btnLeia:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: #007dc6;
+    border: 2px solid #007dc6;
+    cursor: pointer;
+}
+.novidadesRecentes .btnLeia {
+    float: right;
+}
+
+.novidades .novidadesRecentes, .novidade {
+    width: 80%;
+    margin: 0 1% 0 2.5%;
+    float: left;
+}
+
+.resenhas {
+    width: 96%;
+    margin: -31px 2.5% 0 0;
+    float: left;
+    padding: 0 2%;
+}
+
+.personagensBando {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+    width: 100%;
+}
+.personagensBando .group-imagens {
+    margin: 0 auto;
+    width: 1280px;
+}
+.personagensBando .personagens-mug {
+    padding: 5px 5px 0 0;
+    display: inline-block;
+}
+
+.personagensBando .personagens-mug, .personagensBando .personagens-mug img {
+    max-width: 115px;
+    height: 181px;
+    text-align: center;
+}
+
+.personagensBando .personagens-mug img {
+    filter: grayscale(1);
+    transition: all .5s;
+    z-index: 96;
+    position: relative;
+    top: -21px;
+}
+
+.personagensBando .personagens-mug .perso-caption {
+    font: 600 0.8em 'times new roman';
+}
+
+.personagensBando .personagens-mug .perso-caption {
+    z-index: 97;
+    position: relative;
+    top: 133px;
+    color: #797979;
+    text-transform: uppercase;
+}
+
+.personagensBando .link-perso {
+    z-index: 96;
+}
+.personagensBando .link-perso:hover * {
+    color: #B5001D;
+    text-shadow: 0.5px 0.5px 0 hsl(0, 0%, 0%);
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.personagensBando .link-perso:hover {
+    z-index: 999;
+}
+.personagensBando .link-perso:hover .perso-caption {
+    position: relative;
+    top: 136px;
+    z-index: 99;
+}
+
+.sidebar {
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    float: left;
+}
+
+.lista {
+    width: 12%;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 0.5px 0.5px 3px hsla(0, 0%, 0%, 0.25);
+}
+
+.tabela {
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    border: 1px solid hsla(0, 0%, 0%, 0.5);
+    border-spacing: 0;
+}
+#tabela-grupo-pers {
+    width: 1299px;
+    margin: 0 auto;
+}
+#tabela-grupo-pers tbody td:first-child {
+    text-align: center;
+}
+
+.tabela tr th, .tabela tr td {
+    border: 1px solid #c3c3c3;
+    padding: 5px 10px;
+}
+.tabela thead tr, .tabela tfoot tr {
+    color: hsl(0, 0%, 100%);
+    background-color: #B5001D;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px #000;
+}
+.tabela tbody tr:nth-of-type(2n) {
+    background-color: hsla(0, 0%, 80%, 0.5);
+}
+.tabela tbody tr:hover {
+    background-color: hsla(202, 100%, 40%, 0.1);
+}
+
+.tabela#tabela-personagem {
+    width: 522px;
+    float: left;
+}
+#tabela-personagem tbody td:first-child {
+    text-align: center;
+}
+#tabela-personagem tbody td:first-child:hover {
+    background-color: #FFF;
+}   
+.historia-pers {
+    width: calc(100% - 522px - 20px);
+    float: left;
+    padding-left: 20px;
+    text-align: justify;    
+}
+
+.personagem {
+    padding: 0px 2.5%;
+    margin-top: 20px;
+}
+
+.rodape {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(202, 100%, 24%);
+    border-top: solid 1px hsl(0, 0%, 0%);
+    padding: 10px 0;
+    margin-top: 30px;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    float: left;
+}
+
+.rodape small {
+    font: 0.1em;
+}
+
+.padding30 {
+    padding-top: 30px;
+}
+
+.margin30 {
+    margin-top: 31px;
+}
+
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+.novidade .artigo, .novidade #formNovidade {
+    padding: 0 2.5% 0 0;
+}
+
+.group-form {
+    border: none;    
+    float: left;
+}
+
+.curiosidade-sbs {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
+.curiosidade-sbs p.perguntaSBS {
+    margin-top: 20px;
+    width: 50%;
+    float: left;
+    clear: both
+}
+.curiosidade-sbs p.perguntaSBS:nth-of-type(2n) {
+    text-align: right;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.novidade #formNovidade .group-form {
+    width: calc(50% - 3.5px);
+}
+
+#formNovidade .group-form:first-of-type {
+    margin-right: 7px;
+}
+
+.novidadeRecent picture {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.group-form .form-control {
+    padding: 5px;
+    margin-bottom: 7px;
+}
+.group-form input.form-control {
+    width: calc(100% - 10px - 4px);
+}
+.group-form select.form-control, .group-form textarea.form-control {
+    width: 100%;    
+}
+.group-form textarea.form-control {
+    padding-left: 5px;
+    min-height: 89px;
+}
+
+.sumario {
+    float: left;
+    position: fixed;
+    top: 253px;
+}
+
+.resenhas .resenha .divisao {
+    margin-top: 10px;
+}
+.resenhas .resenha, .resenhas > .titulo {
+    margin-left: 17.5%;
+}
+
+.resenhas .resenha .form {
+    text-align: center;
+}
+.resenhas .resenha .form .group-form {
+    width: calc(100% / 3 - 2px);
+    text-align: center;
+    border-left: 1px solid hsl(202, 100%, 24%);
+    height: 61px;
+}
+.resenhas .resenha .form .group-form:first-child {
+    border-left: none;    
+}
+.resenhas .resenha .form .group-form .form-range {
+    display: block;
+    margin: 0 auto;
+}
+.resenhas .resenha .form .group-form select {    
+    height: 61px;
+    width: 80%
+}
+.resenhas .resenha .btn_enviar {
+    margin: 0 auto;
+}
+.resenha, .curiosidade, .grupo-personagem  {
+    margin-bottom: 20px;
+}
+.resenha, .artigo, .curiosidadeArtig {
+    text-align: justify;
+}
+
+.grupo-personagem {
+    margin-top: 20px;
+}
+.curiosidade, .grupo-personagem {
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.curiosidadeArtig {
+    clear: both;
+    padding: 0 15%;
+}
+
+.curiosidadeArtig .containerImg {
+    text-align: right;    
+    width: 199px;
+}
+.curiosidadeArtig .containerImg img {
+    max-width: 199px;
+}
+.curiosidadeArtig .descricaoCuriosidade, .curiosidadeArtig .containerImg {
+    max-height: 199px;
+    float: left;
+}
+.curiosidadeArtig .descricaoCuriosidade {
+    padding: 0 10px 20px 10px;
+    width: calc(100% - 219px);
+}
+
+.img-curiosidade {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.grupo-personagem  .subtitulo {
+	color: #FFF;
+	
+}
+
+.grupo-personagem {
+    height: 112px;
+    width: calc(50% - 70px);
+    float: left;
+    padding: 20px 30px;
+    margin-top: 20px;
+	color: #FFF;
+	background-color: hsl(0, 0%, 24%);
+    background-repeat: no-repeat;
+    background-position: center;
+	border-radius: 5px;
+}
+
+.grupo-personagem:nth-of-type(2n) {
+    margin-left: 20px;
+}
+
+#personagen-mugiwara {
+    background-image: url("../imagens/mugiwara_filter_dark.jpg");
+}
+
+#personagen-shichibukais {
+    background-image: url("../imagens/shichibukais_filter_dark.jpg");
+}
+
+#personagen-younkous {
+    background-image: url("../imagens/younkous_filter_dark.jpg");
+}
+
+#personagen-demais {
+    background-image: url("../imagens/todos_personagens_filter_dark.jpg");
+}
+
+.curiosidade, .grupo-personagem {
+    box-shadow: 0.5px 0.5px 10px hsl(0, 0%, 54%);
+}
+
+.grupo-personagem  a, .curiosidade a {
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.grupo-personagem  a {
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.2em;
+}
+.grupo-personagem  a:hover {
+    color: #FFF;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1366px) {
+    .novidadeRecent picture {
+        height: 199px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .topo .logo {
+        left: 17px;
+    }    
+    .topo {
+        background-position: initial;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 0.9em;
+    }
+    .home .novidadesRecentes {
+        padding: 20px 5%;
+    }
+    .novidadeRecent {
+        min-height: 150px;
+        height: 150px;
+    }
+    .novidadeRecent img {
+        max-height: 150px;
+    }
+    .novidadeRecent .descricaoNovidade {
+        width: calc(100% - 150px - 20px);        
+    }
+    .novidadeRecent .descricaoNovidade .descricao {
+        text-overflow: ellipsis; 
+        height: calc(150px - 0.9em - 1.2em - 40px - 4px);
+        overflow: hidden;
+    } 
+    
+    .tabela#tabela-grupo-pers {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .objetivosPag {
+        display: block;
+        text-align: center;
+        padding: 20px 10px 40px 10px;
+    }
+    .objetivosPag .img-pag {
+        max-width: 100%;
+    }
+    .personagensBando .personagens-mug, .personagensBando .personagens-mug img {
+        max-width: 100%;
+        width: 80%;
+        font-size: 1.5em;
+    }
+    .novidadesRecentes .subtitulo {
+        white-space: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: calc(100% - 150);
+    }
+    .chamada .texto-chamada {
+        max-width: 100%;
+    }
+    .chamada .img-lateral {
+        display: none;
+    }
+    .objetivosPag {
+        padding: 20px 10px 40px 10px;
+    }
+    .objetivosPag .texto-pag {
+        float: none;
+        max-width: 100%;
+    }
+    .novidadesRecentes {
+        padding: 20px 10%;
+        float: none;
+    }
+    .novidadeRecent {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .novidadeRecent:last-child {
+        margin-bottom: 0px;
+    }
+    .personagensBando .group-imagens {
+        width: 1024px;
+    }
+}
