@@ -660,12 +660,6 @@ a:hover {
     display: none;
 }
 
-@media screen and (min-width: 1366px) {
-    .novidadeRecent picture {
-        height: 199px;
-    }
-}
-
 @media screen and (max-width: 1366px) {
     .topo .logo {
         left: 17px;
@@ -712,11 +706,6 @@ a:hover {
     .objetivosPag .img-pag {
         max-width: 100%;
     }
-    .personagensBando .personagens-mug, .personagensBando .personagens-mug img {
-        max-width: 100%;
-        width: 80%;
-        font-size: 1.5em;
-    }
     .novidadesRecentes .subtitulo {
         white-space: break-word;
         text-overflow: ellipsis;
@@ -752,3 +741,14 @@ a:hover {
         width: 1024px;
     }
 }
+@media screen and (max-width: 1366px) {
+    .personagensBando {
+        display: none;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .novidadeRecent picture {
+        height: 199px;
+    }
+}
+

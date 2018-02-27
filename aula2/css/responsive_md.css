@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'times new roman', 'serif';
+}
+
+.container {
+    margin: 0 2rem;
+}

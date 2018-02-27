@@ -51,7 +51,11 @@
         </section>
         <section class="chamada padding30">
             <h2 class="titulo text-center">O Início</h2>
-            <img class="img-lateral" src="imagens/zoro_home.jpg" alt="Imagem sobre a página">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="imagens/zoro_home.jpg">
+                <source media="(max-width: 1024px)" srcset="#">
+                <img class="img-lateral" src="imagens/zoro_home.jpg" alt="Imagem sobre a página">
+            </picture>
             <p class="texto-chamada">
                 Pellentesque sed est leo. In lobortis suscipit libero eu faucibus. Interdum et malesuada fames ac ante ipsum primis in 
                 faucibus. Pellentesque convallis magna efficitur neque euismod volutpat. Aliquam malesuada dolor pellentesque augue 
@@ -59,14 +63,18 @@
                 imperdiet vitae aliquet in, aliquam at ligula
                 <a href="resenhas.html" class="" title="Clique aqui e continue lendo..."> [...]</a>
             </p>
-            <img class="img-lateral" src="imagens/usopp_home.jpg" alt="Imagem sobre a página">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="imagens/usopp_home.jpg">
+                <source media="(max-width: 1024px)" srcset="#">
+                    <img class="img-lateral" src="imagens/usopp_home.jpg" alt="Imagem sobre a página">
+            </picture>
         </section>
         <section class="novidadesRecentes">
             <h2 class="titulo">Novidades</h2>
             <figure class="novidadeRecent">
                 <picture>
-                    <source media="(max-width: 1280px)" srcset="imagens/onde-esta-zoro_150.jpg">
                     <source media="(min-width: 1280px)" srcset="imagens/onde-esta-zoro.jpg">
+                    <source media="(max-width: 1280px)" srcset="imagens/onde-esta-zoro_150.jpg">
                     <img src="imagens/onde-esta-zoro.jpg" alt="Imagem onde esta o zoro">
                 </picture>
                 <figcaption class="descricaoNovidade">
@@ -79,8 +87,8 @@
             </figure>
             <figure class="novidadeRecent">
                 <picture>
-                    <source media="(max-width: 1280px)" srcset="imagens/novo-almirante_150.jpg">
                     <source media="(min-width: 1280px)" srcset="imagens/novo-almirante.jpg">
+                    <source media="(max-width: 1280px)" srcset="imagens/novo-almirante_150.jpg">
                     <img src="imagens/novo-almirante.jpg" alt="Imagem sobre quem sera o novo almirante">
                 </picture>
                 <figcaption class="descricaoNovidade">
@@ -97,55 +105,91 @@
             <a href="personagem_variavel.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Chopper">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Chopper</h2></figcaption>
-                    <img src="imagens/chopper.jpg" alt="Imagem do personagem Chopper">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/chopper.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/chopper.jpg" alt="Imagem do personagem Chopper">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_variavel.html" class="link-perso" title="Clique aqui para conhecer mais sobre a Nami">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Nami</h2></figcaption>
-                    <img src="imagens/nami.jpg" alt="Imagem do personagem nami">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/nami.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/nami.jpg" alt="Imagem do personagem nami">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_variavel.html" class="link-perso" title="Clique aqui para conhecer mais sobre a Robin">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Robin</h2></figcaption>
-                    <img src="imagens/robin.jpg" alt="Imagem do personagem Robin">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/robin.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/robin.jpg" alt="Imagem do personagem Robin">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_variavel.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Sanji">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Sanji</h2></figcaption>
-                    <img src="imagens/sanji.jpg" alt="Imagem do personagem Sanji">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/sanji.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/sanji.jpg" alt="Imagem do personagem Sanji">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_luffy.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Luffy">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Luffy</h2></figcaption>
-                    <img src="imagens/luffy.jpg" alt="Imagem do personagem Luffy">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/luffy.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/luffy.jpg" alt="Imagem do personagem Luffy">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_zoro.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Zoro">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Zoro</h2></figcaption>
-                    <img src="imagens/zoro.jpg" alt="Imagem do personagem Zoro">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/zoro.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/zoro.jpg" alt="Imagem do personagem Zoro">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_usopp.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Usopp">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>usopp</h2></figcaption>
-                    <img src="imagens/usopp.jpg" alt="Imagem do personagem usopp">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/usopp.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/usopp.jpg" alt="Imagem do personagem usopp">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_variavel.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Brook">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Brook</h2></figcaption>
-                    <img src="imagens/brook.jpg" alt="Imagem do personagem Brook">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/brook.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/brook.jpg" alt="Imagem do personagem Brook">
+                    </picture>
                 </figure>
             </a>
             <a href="personagem_variavel.html" class="link-perso" title="Clique aqui para conhecer mais sobre o Franky">
                 <figure class="personagens-mug">
                     <figcaption class="perso-caption"><h2>Franky</h2></figcaption>
-                    <img src="imagens/franky.jpg" alt="Imagem do personagem Franky">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="imagens/franky.jpg">
+                        <source media="(max-width: 1366px)" srcset="#">
+                        <img src="imagens/franky.jpg" alt="Imagem do personagem Franky">
+                    </picture>
                 </figure>
             </a>
         </section>
