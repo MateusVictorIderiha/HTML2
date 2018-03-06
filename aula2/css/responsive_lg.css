@@ -15,10 +15,59 @@ body {
 }
 
 p {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3 {
+    font-family: arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
     font-size: 1.5rem;
 }
 
-h2 {
-    font-size: 2rem;
+.topo {
+    height: 242px;
+    background: url(../imagens/topo.jpg) no-repeat center;
+    margin-bottom: 45px;
 }
 
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+body {
+    background: url(../imagens/LP_logo.jpg) repeat 0px 0px;
+}
+
+.filter {
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0.76) 0%, #fff 90%);
+}
+
+.navegacao {
+    position: absolute;
+    top: 242px;
+    background-color: #828282;
+    width: 1024px;
+    text-align: center;
+    padding: 5px 0;
+}
+.navegacao a {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0px 38px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 600;
+    border-right: 1px solid #FFF;
+}
+.navegacao a:last-of-type {
+    border-right: none;    
+}
+.navegacao a:hover {
+    color: #000;
+}
