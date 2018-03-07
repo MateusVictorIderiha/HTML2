@@ -19,5 +19,24 @@ body {
 }
 
 h2, h1, h3 {
+    margin-top: 1rem;
     text-transform: uppercase;
+}
+
+a {
+    font-family: arial;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+}
+a:hover {
+    color: #007dc6;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }

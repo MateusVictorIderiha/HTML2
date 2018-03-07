@@ -6,10 +6,27 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'times new roman', 'serif';
 }
 
 .container {
-    margin: 0 2rem;
+    margin: 0 .5rem;
+    max-width: 800px;
+}
+
+.topo {
+    height: 189px;
+    background: url(../imagens/topo_800.jpg) no-repeat center;
+    margin-bottom: 45px;
+}
+
+.filter {
+    padding: 0 5px;
+}
+
+.navegacao {
+    top: 189px;
+    width: 96.4%;
+    max-width: 800px;
 }
