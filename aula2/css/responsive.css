@@ -33,6 +33,21 @@ a:hover {
     color: #007dc6;
 }
 
+.btnLeiaMais {
+    padding: 14px 50px 14px 12px;
+    height: 50px;
+    border-radius: 5px;
+    background: url(../imagens/LP_logo_hover.jpg) no-repeat right -101px #FFF;
+    color: #000;
+}
+.btnLeiaMais:hover {
+    background-position: right 0px;
+    color: #FFF;
+    background-color: #000;
+}
+section p {
+    margin-bottom: 15px;
+}
 footer {
     text-align: center;
     width: 100%;
