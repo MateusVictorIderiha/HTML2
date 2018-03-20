@@ -11,10 +11,6 @@ and open the template in the editor.
 img {
     max-width: 100%;
 }
-
-footer {
-    text-align: center;
-}
 .image-popup img {
     transform: scale(0.9);
 }
@@ -24,4 +20,22 @@ footer {
 
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close:hover {
     cursor: pointer;
+}
+
+header .logo {
+    max-width: 200px;
+}
+
+.fab {
+    color: #FFF;
+}
+
+header, footer {
+    background-color: #000;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
 }
