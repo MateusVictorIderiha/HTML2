@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <div class="container">
+            <div class="row">
+                <!--
+                bootstrap3
+                No bootstrap usa-se col-md-push-4 para puxar 4 colunas -> 
+                No bootstrap usa-se col-md-pull-4 para empurrar 4 colunas <-
+                
+                -- X --
+                
+                bootstrap4
+                #### ORDER ####
+                Pelo que parece nos indices do order primeiro e ultimo vão automatico, se for no meio tem que reordenar os outros elementos, 
+                ele usa a propriedade "order" com o flex
+                -->
+                <div class="col-6 col-sm-4 col-md-3 order-md-9 col-lg-3 order-lg-0">
+                    <h1>Texto 1</h1>
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <h1>Texto 2</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <h1>Texto 3</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <h1>Texto 4</h1>
+                    <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+            </div>
+        </div>
+        <!--
+        #### container-fluid ####
+        O fluid contem um padding menor de 15px
+        -->
+        <div class="container-fluid">
+            <div class="row">
+                <!--
+                bootstrap4
+                ### offset-md-2 ###
+                A diferença do offset para o ORDER(no bootstrap3 push e pull)
+                -->
+                <div class="col-6 col-sm-4 col-md-4 order-md-4 offset-md-2 col-lg-3 order-lg-9 offset-lg-0">
+                    <blockquote class="blockquote text-justify">
+                        <h4 class="h1">Texto 1 clockote</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                        <footer class="blockquote-footer">Fulano</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-2 order-md-0 col-lg-3">
+                    <h1>Texto 2</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+                <div class="col-md-2 order-md-6 col-lg-3">
+                    <h1 class="h3">Texto 3</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+                <div class="col-md-2 order-md-9 col-lg-3">
+                    <h1 class="h4">Texto 4</h1>
+                    <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt et tellus et vestibulum. Morbi venenatis, nisi vitae rutrum dapibus, leo ex dictum lorem, id commodo diam nisl sed magna. Morbi sagittis augue nec ante vestibulum venenatis. Vestibulum condimentum elementum ligula, nec commodo lacus aliquam vestibulum. In nec tristique enim, a pellentesque nisl. Suspendisse tincidunt at sapien sed vulputate. Curabitur sollicitudin magna non urna varius, et dapibus diam mattis. Aliquam ante sapien, pharetra at ornare at, dapibus a ex. Nam vulputate imperdiet velit efficitur porta. Donec eu imperdiet odio. Integer malesuada nulla ornare ultrices placerat.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid text-center p-3">
+            Copiright @2018
+        </footer>
+    </body>
+</html>
