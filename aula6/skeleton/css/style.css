@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 18, 2018, 10:45:39 PM
+    Author     : mateus
+*/
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 10px;;
+}
+
+body > .container {
+    clear: both;
+}
+
+.container > article, .container > section {
+    margin-bottom: 20px;
+}
+
+body > footer {
+    margin-top: 40px;
+    padding: 15px 0;
+    background-color: #000;
+    text-align: center;
+    color: #CCC;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-just {
+    text-align: justify;
+}
+
+.icon {
+    max-width: 75px;
+    float: left;
+    margin-right: 10px;
+}
+
+.imagens {
+    text-align: center;
+}
+.imagens img {
+    max-height: 413px;    
+}
+
+.imagens .row + .row {
+    margin-top: 15px;
+}
+
+.topo {
+    height: 330px;
+    background: url("../images/topo.jpg") #262626 center no-repeat;
+    filter: grayscale(0.9);
+    margin-bottom: 20px;
+}
+
+.menu {
+    position: relative;
+    top: 295px;
+    background-color: hsla(0, 100%, 100%, 0.5);
+}
+
+.menu ul {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+.menu ul li a {
+    display: block;
+    padding: 5px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.img-resp {
+    max-width: 100%;
+}
